@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Video Work</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- header start -->
+
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 logo"><a href="#"> <img src="./img/lfwf-logo.png" alt=""> </a></div>
+                    <div class="col-lg-7 navbar pb-0">
+                        <ul class="menu">
+                            <li><a href="#"> Home </a></li>
+                            <li><a href="#"> Blog </a></li>
+                            <li><a href="#"> portfolio </a></li>
+                            <li><a href="#"> My resume </a></li>
+                            <li><a href="#"> contact </a></li>
+                        </ul>
+                    </div>
+                <div class="col-lg-4 mt-1 search">
+                    <form action="#">
+                    <input class="py-1" type="search" id="" name="" placeholder="Search">
+                    <button type="button" class=" dane btn btn-outline-primary">Primary</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- header end -->
+    <!-- carosal start -->
+
+    <div class="container-fluid mb-3">
+        <div class="row">
+            <div class="col-xl-12">
+                <div id="carouselWithCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="0" class="active"></li>
+                      <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="1"></li>
+                      <li data-bs-target="#carouselWithCaptions" data-bs-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/img1.jpg" class="d-block w-100 h-25" alt="Slide 1">
+                        <div class="carousel-caption d-none d-sm-block">
+                          <h5>First slide label</h5>
+                          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/img2.jpg" class="d-block w-100 h-25" alt="Slide 2">
+                        <div class="carousel-caption d-none d-sm-block">
+                          <h5>Second slide label</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/img3.jpeg" class="d-block w-100 h-25" alt="Slide 3">
+                        <div class="carousel-caption d-none d-sm-block">
+                          <h5>Third slide label</h5>
+                          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselWithCaptions" role="button" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselWithCaptions" role="button" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- carosal end -->
+    <!-- toast&breadcrumb start -->
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-3">
+                      <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ol>
+                  </nav>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-3">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                  </nav>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb p-3">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Library</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Data</li>
+                    </ol>
+                  </nav>
+            </div>
+            <div class="col-lg-6">
+                <!-- Note: A custom script is used to activate toasts:
+
+var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+var toastList = toastElList.map(function (toastEl) {
+  return new bootstrap.Toast(toastEl, {
+    autohide: false
+  }).show()
+})
+-->
+<div class="toast toast-demo fade show" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- toast&breadcrumb end -->
+    <!-- tooltip start -->
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="" data-bs-original-title="Tooltip on top">
+                    Tooltip on top
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Tooltip on right">
+                    Tooltip on right
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="" data-bs-original-title="Tooltip on bottom">
+                    Tooltip on bottom
+                  </button>
+                  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="" data-bs-original-title="Tooltip on left">
+                    Tooltip on left
+                  </button>
+                  
+            </div>
+        </div>
+    </div>
+
+    <!-- tooltip end -->
+    <!-- accordino start -->
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="accordion accordion-flush" id="accordionFlush">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          Accordion Item #1
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlush">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          Accordion Item #2
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlush">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                          Accordion Item #3
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse show" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlush">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- accordino end -->
+    <!-- progress start -->
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress mb-3">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- progress end -->
+    <!-- alart start -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">Well done!</h4>
+                    <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                    <hr>
+                    <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- alart end -->
+    <!-- footer start -->
+
+    <div class="foooter bg-info">
+        <div class="container text-center py-3">
+            <div class="row">
+                <div class="col-lg-12"><h5>&copy; All Right Reserved By Anwar</h5></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+      <script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })</script>
+  </body>
+</html>
